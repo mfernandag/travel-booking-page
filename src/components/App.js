@@ -1,5 +1,10 @@
 import React from "react";
-import NavBar from "./NavBar";
+import Header from "./Header";
+import Test from "./Test";
+
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
 
 function App() {
   const menuLinks = [
@@ -10,13 +15,26 @@ function App() {
     { label: "Experiences", url: "/experiences" },
   ];
 
+  const myAccountLinks = [
+    { label: "Preferences", url: "/" },
+    { label: "Notifications", url: "/" },
+    { label: "Payment Methods", url: "/" },
+    { label: "Travelers", url: "/" },
+    { label: "History", url: "/" },
+    { label: "Bookmark", url: "/" },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>app de viajes</p>
-      </header>
-      <NavBar menuLinks={menuLinks} />
-    </div>
+    <React.Fragment>
+      <CssBaseline />
+      <Container maxWidth="md">
+        <Header
+          menuName="My Account"
+          menuLinks={menuLinks}
+          myAccountLinks={myAccountLinks}
+        />
+      </Container>
+    </React.Fragment>
   );
 }
 
