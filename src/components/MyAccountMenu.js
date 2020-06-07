@@ -6,14 +6,12 @@ import MyAccountDropdown from "./MyAccountDropdown";
 
 const MyAccountMenu = ({ myAccountLinks }) => {
   return (
-    <div>
-      <div>
-        <MyAccountDropdown
-          icon={AccountBoxIcon}
-          menuName="My Account"
-          myAccountLinks={myAccountLinks}
-        />
-      </div>
+    <div className="myAccountWrapper">
+      <MyAccountDropdown
+        icon={AccountBoxIcon}
+        menuName="My Account"
+        myAccountLinks={myAccountLinks}
+      />
     </div>
   );
 };

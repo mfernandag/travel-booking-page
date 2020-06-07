@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -92,6 +93,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -120,14 +122,20 @@ q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+blockquote {
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
 }
 
-q:before, q:after {
-  content: "";
-  content: none;
+q {
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
 }
 
 table {
@@ -137,67 +145,52 @@ table {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../src/assets/images/plate-flight-sky-sunset_1500x801.jpeg");
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
-}
-
-.header .header-logo {
-  width: 15%;
-}
-
-.header .navBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 30px;
-}
-
-.header .navBar .navLink {
-  margin-left: 20px;
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-}
-
-.header .navBar .navLink:hover {
-  color: white;
-}
-
-.header .myAccountWrapper {
-  margin-left: auto;
-  color: white;
-}
-
-.header .myAccountWrapper .MuiButton-root {
-  color: white !important;
-}
-
-.header .myAccountWrapper .MuiButton-root .MuiListItemIcon-root {
-  color: white !important;
-  min-width: 35px !important;
+  .header-logo {
+    width: 15%;
+  }
+  .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    .navLink {
+      margin-left: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .myAccountWrapper {
+    margin-left: auto;
+    color: white;
+    .MuiButton-root {
+      color: white !important;
+      .MuiListItemIcon-root {
+        color: white !important;
+        min-width: 35px !important;
+      }
+    }
+  }
 }
 
 .inputsWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-/*# sourceMappingURL=index.css.map */

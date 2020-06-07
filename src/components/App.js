@@ -1,10 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import Test from "./Test";
+import MainContent from "./MainContent";
+//import Test from "./Test";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
+
+import "../index.css";
 
 function App() {
   const menuLinks = [
@@ -33,6 +36,12 @@ function App() {
           menuLinks={menuLinks}
           myAccountLinks={myAccountLinks}
         />
+        <section className="main">
+          <MainContent
+            title="Cheap Flights Best Deals"
+            subtitle="Search hundreds of travel sites at once"
+          />
+        </section>
       </Container>
     </React.Fragment>
   );

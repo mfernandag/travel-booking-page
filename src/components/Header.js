@@ -5,12 +5,10 @@ import logo from "../assets/images/adantrip.png";
 
 const Header = ({ menuLinks, myAccountLinks }) => {
   return (
-    <div>
-      <img src={logo} alt="logo"></img>
+    <div className="header">
+      <img className="header-logo" src={logo} alt="logo"></img>
       <NavBar menuLinks={menuLinks} />
-      <div>
-        <MyAccountMenu menuName="My Account" myAccountLinks={myAccountLinks} />
-      </div>
+      <MyAccountMenu menuName="My Account" myAccountLinks={myAccountLinks} />
     </div>
   );
 };

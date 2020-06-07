@@ -3,9 +3,13 @@ import React from "react";
 const NavBar = ({ menuLinks }) => {
   return (
     <React.Fragment>
-      <nav>
+      <nav className="navBar">
         {menuLinks.map((menuLink) => {
-          return <a href={menuLink.url}>{menuLink.label}</a>;
+          return (
+            <a className="navLink" href={menuLink.url}>
+              {menuLink.label}
+            </a>
+          );
         })}
       </nav>
     </React.Fragment>
