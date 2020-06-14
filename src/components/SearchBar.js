@@ -28,7 +28,7 @@ const SearchBar = ({ title, subtitle }) => {
             <AccountCircle />
           </Grid>
           <Grid item>
-            <TextField id="input-with-icon-grid" label="Departure" />
+            <TextField id="input-with-icon-grid" label="Flying from?" />
           </Grid>
         </Grid>
       </div>
@@ -38,12 +38,12 @@ const SearchBar = ({ title, subtitle }) => {
             <AccountCircle />
           </Grid>
           <Grid item>
-            <TextField id="input-with-icon-grid" label="Arrival" />
+            <TextField id="input-with-icon-grid" label="Destination" />
           </Grid>
         </Grid>
       </div>
-      <DayPickerInput />
-      <DayPickerInput />
+      <DayPickerInput date="Depart" />
+      <DayPickerInput date="Return" />
       <TextField
         id="standard-number"
         label=""

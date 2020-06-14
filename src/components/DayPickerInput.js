@@ -10,10 +10,10 @@ import MomentLocaleUtils, {
 
 import "moment/locale/it";
 
-export default function Example() {
+export default function Example({ date }) {
   return (
     <div>
-      <p>In English (default):</p>
+      <p>{date}</p>
       <DayPickerInput
         formatDate={formatDate}
         parseDate={parseDate}

@@ -200,4 +200,8 @@ code {
   display: -ms-flexbox;
   display: flex;
 }
+
+.inputsWrapper .DayPickerInput {
+  width: 90px;
+}
 /*# sourceMappingURL=index.css.map */

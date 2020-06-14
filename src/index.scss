@@ -193,4 +193,7 @@ code {
 
 .inputsWrapper {
   display: flex;
+  .DayPickerInput {
+    width: 90px;
+  }
 }
