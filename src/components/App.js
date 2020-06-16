@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import MainContent from "./MainContent";
 import ExtraInfo from "./ExtraInfo";
+import Footer from "./Footer";
 //import Test from "./Test";
 import "../index.css";
 
@@ -13,6 +14,16 @@ import PublicIcon from "@material-ui/icons/Public";
 import RedeemIcon from "@material-ui/icons/Redeem";
 import LoyaltyIcon from "@material-ui/icons/Loyalty";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
+import { library } from "@fortawesome/fontawesome-svg-core";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
+//library.add(faFacebook, faTwitter);
+
 const publicIcon = <PublicIcon />;
 const giftIcon = <RedeemIcon />;
 const price = <LoyaltyIcon />;
@@ -35,6 +46,14 @@ function App() {
     { label: "History", url: "/" },
     { label: "Bookmark", url: "/" },
   ];
+
+  const footerLinks = [
+    ...menuLinks,
+    { label: "About us", url: "/about-us" },
+    { label: "Contact", url: "/contact" },
+  ];
+
+  const socialMediaIcons = [faFacebook, faTwitter, faInstagram];
 
   const extraData = [
     {
@@ -80,6 +99,12 @@ function App() {
             subtitle="Search hundreds of travel sites at once"
           />
           <ExtraInfo extraData={extraData} />
+        </section>
+        <section className="footer">
+          <Footer
+            footerLinks={footerLinks}
+            socialMediaIcons={socialMediaIcons}
+          />
         </section>
       </Container>
     </React.Fragment>
