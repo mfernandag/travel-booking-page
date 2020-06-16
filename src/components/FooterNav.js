@@ -4,9 +4,9 @@ const FooterNav = ({ footerLinks }) => {
   return (
     <React.Fragment>
       <nav className="">
-        {footerLinks.map((link) => {
+        {footerLinks.map((link, id) => {
           return (
-            <a key={link.id} className="" href={link.url}>
+            <a key={id} className="" href={link.url}>
               {link.label}
             </a>
           );

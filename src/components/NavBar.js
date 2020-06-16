@@ -4,9 +4,9 @@ const NavBar = ({ menuLinks }) => {
   return (
     <React.Fragment>
       <nav className="navBar">
-        {menuLinks.map((menuLink) => {
+        {menuLinks.map((menuLink, id) => {
           return (
-            <a key={menuLink.id} className="navLink" href={menuLink.url}>
+            <a key={id} className="navLink" href={menuLink.url}>
               {menuLink.label}
             </a>
           );

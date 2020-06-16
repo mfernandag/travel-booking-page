@@ -8,9 +8,9 @@ const Footer = ({ footerLinks, socialMediaIcons }) => {
       <FooterNav footerLinks={footerLinks} />
       <p>Copyright © 2019 Adantrip. All rights reserved.</p>
       <div className="sm-wrapper">
-        {socialMediaIcons.map((icon) => {
+        {socialMediaIcons.map((icon, id) => {
           return (
-            <a key={icon.id} href={icon.url}>
+            <a key={id} href={icon.url}>
               <FontAwesomeIcon icon={icon.iconName} />
             </a>
           );

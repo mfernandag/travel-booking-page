@@ -4,9 +4,9 @@ import Icon from "@material-ui/core/Icon";
 const ExtraInfo = (props) => {
   return (
     <div>
-      {props.extraData.map((data) => {
+      {props.extraData.map((data, id) => {
         return (
-          <div key={data.id}>
+          <div key={id}>
             <Icon>{data.icon}</Icon>
             <h3>{data.title}</h3>
             <p>{data.text}</p>

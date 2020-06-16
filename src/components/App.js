@@ -30,11 +30,11 @@ const support = <LiveHelpIcon />;
 
 function App() {
   const menuLinks = [
-    { id: 0, label: "Hotels", url: "/hotels" },
-    { id: 1, label: "Rooms", url: "/rooms" },
-    { id: 2, label: "Flights", url: "/flights" },
-    { id: 3, label: "Cars", url: "/cars" },
-    { id: 4, label: "Experiences", url: "/experiences" },
+    { label: "Hotels", url: "/hotels" },
+    { label: "Rooms", url: "/rooms" },
+    { label: "Flights", url: "/flights" },
+    { label: "Cars", url: "/cars" },
+    { label: "Experiences", url: "/experiences" },
   ];
 
   const myAccountLinks = [
@@ -48,41 +48,35 @@ function App() {
 
   const footerLinks = [
     ...menuLinks,
-    { id: 5, label: "About us", url: "/about-us" },
-    { id: 6, label: "Contact", url: "/contact" },
+    { label: "About us", url: "/about-us" },
+    { label: "Contact", url: "/contact" },
   ];
 
-  //const socialMediaIcons = [faFacebook, faTwitter, faInstagram];
-
   const socialMediaIcons = [
-    { id: 0, iconName: faFacebook, url: "https://www.facebook.com/" },
-    { id: 1, iconName: faTwitter, url: "https://twitter.com/home" },
-    { id: 2, iconName: faInstagram, url: "https://www.instagram.com/" },
+    { iconName: faFacebook, url: "https://www.facebook.com/" },
+    { iconName: faTwitter, url: "https://twitter.com/home" },
+    { iconName: faInstagram, url: "https://www.instagram.com/" },
   ];
 
   const extraData = [
     {
-      id: 1,
       icon: publicIcon,
       title: "Explore the World",
       text:
         "Start to discrover. We will help you to visit any place you can imagine",
     },
     {
-      id: 2,
       icon: giftIcon,
       title: "Gifts & Rewards",
       text: "Get even more from our service. Spend less and travel more",
     },
     {
-      id: 3,
       icon: price,
       title: "Best prices",
       text:
         "We are comparing hundreds travel websites to find best price for you",
     },
     {
-      id: 4,
       icon: support,
       title: "27/7 Support",
       text: "Contact us anytime, anywhere. We will resolve any issues ASAP",
