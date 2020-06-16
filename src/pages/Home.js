@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import MainContent from "./MainContent";
-import ExtraInfo from "./ExtraInfo";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import MainContent from "../components/MainContent";
+import ExtraInfo from "../components/ExtraInfo";
+import Footer from "../components/Footer";
 //import Test from "./Test";
 import "../index.css";
 
