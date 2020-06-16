@@ -14,8 +14,7 @@ import PublicIcon from "@material-ui/icons/Public";
 import RedeemIcon from "@material-ui/icons/Redeem";
 import LoyaltyIcon from "@material-ui/icons/Loyalty";
 import LiveHelpIcon from "@material-ui/icons/LiveHelp";
-import { library } from "@fortawesome/fontawesome-svg-core";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faFacebook,
   faTwitter,
@@ -31,11 +30,11 @@ const support = <LiveHelpIcon />;
 
 function App() {
   const menuLinks = [
-    { label: "Hotels", url: "/hotels" },
-    { label: "Rooms", url: "/rooms" },
-    { label: "Flights", url: "/flights" },
-    { label: "Cars", url: "/cars" },
-    { label: "Experiences", url: "/experiences" },
+    { id: 0, label: "Hotels", url: "/hotels" },
+    { id: 1, label: "Rooms", url: "/rooms" },
+    { id: 2, label: "Flights", url: "/flights" },
+    { id: 3, label: "Cars", url: "/cars" },
+    { id: 4, label: "Experiences", url: "/experiences" },
   ];
 
   const myAccountLinks = [
@@ -49,11 +48,17 @@ function App() {
 
   const footerLinks = [
     ...menuLinks,
-    { label: "About us", url: "/about-us" },
-    { label: "Contact", url: "/contact" },
+    { id: 5, label: "About us", url: "/about-us" },
+    { id: 6, label: "Contact", url: "/contact" },
   ];
 
-  const socialMediaIcons = [faFacebook, faTwitter, faInstagram];
+  //const socialMediaIcons = [faFacebook, faTwitter, faInstagram];
+
+  const socialMediaIcons = [
+    { id: 0, iconName: faFacebook, url: "https://www.facebook.com/" },
+    { id: 1, iconName: faTwitter, url: "https://twitter.com/home" },
+    { id: 2, iconName: faInstagram, url: "https://www.instagram.com/" },
+  ];
 
   const extraData = [
     {

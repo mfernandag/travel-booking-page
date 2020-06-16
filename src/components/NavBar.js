@@ -6,7 +6,7 @@ const NavBar = ({ menuLinks }) => {
       <nav className="navBar">
         {menuLinks.map((menuLink) => {
           return (
-            <a className="navLink" href={menuLink.url}>
+            <a key={menuLink.id} className="navLink" href={menuLink.url}>
               {menuLink.label}
             </a>
           );

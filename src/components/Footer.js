@@ -7,9 +7,15 @@ const Footer = ({ footerLinks, socialMediaIcons }) => {
     <React.Fragment>
       <FooterNav footerLinks={footerLinks} />
       <p>Copyright © 2019 Adantrip. All rights reserved.</p>
-      {socialMediaIcons.map((icon) => {
-        return <FontAwesomeIcon icon={icon} />;
-      })}
+      <div className="sm-wrapper">
+        {socialMediaIcons.map((icon) => {
+          return (
+            <a key={icon.id} href={icon.url}>
+              <FontAwesomeIcon icon={icon.iconName} />
+            </a>
+          );
+        })}
+      </div>
     </React.Fragment>
   );
 };

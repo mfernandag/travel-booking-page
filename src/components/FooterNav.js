@@ -6,7 +6,7 @@ const FooterNav = ({ footerLinks }) => {
       <nav className="">
         {footerLinks.map((link) => {
           return (
-            <a className="" href={link.url}>
+            <a key={link.id} className="" href={link.url}>
               {link.label}
             </a>
           );

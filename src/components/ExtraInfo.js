@@ -6,7 +6,7 @@ const ExtraInfo = (props) => {
     <div>
       {props.extraData.map((data) => {
         return (
-          <div key="id">
+          <div key={data.id}>
             <Icon>{data.icon}</Icon>
             <h3>{data.title}</h3>
             <p>{data.text}</p>
