@@ -87,11 +87,7 @@ function App() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="md">
-        <Header
-          menuName="My Account"
-          menuLinks={menuLinks}
-          myAccountLinks={myAccountLinks}
-        />
+        <Header data={menuLinks} myAccountLinks={myAccountLinks} />
         <section className="main">
           <MainContent
             title="Cheap Flights Best Deals"
@@ -100,10 +96,7 @@ function App() {
           <ExtraInfo extraData={extraData} />
         </section>
         <section className="footer">
-          <Footer
-            footerLinks={footerLinks}
-            socialMediaIcons={socialMediaIcons}
-          />
+          <Footer data={footerLinks} socialMediaIcons={socialMediaIcons} />
         </section>
       </Container>
     </React.Fragment>

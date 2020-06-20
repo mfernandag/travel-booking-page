@@ -1,10 +1,10 @@
 import React from "react";
 
-const NavBar = ({ menuLinks }) => {
+const NavBar = ({ data }) => {
   return (
     <React.Fragment>
       <nav className="navBar">
-        {menuLinks.map((menuLink, id) => {
+        {data.map((menuLink, id) => {
           return (
             <a key={id} className="navLink" href={menuLink.url}>
               {menuLink.label}
