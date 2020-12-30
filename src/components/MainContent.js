@@ -1,6 +1,5 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import CustomizedRadios from "./CustomizedRadios";
+// import SearchBar from "./SearchBar";
 
 const MainContent = ({ title, subtitle }) => {
   return (
@@ -9,10 +8,7 @@ const MainContent = ({ title, subtitle }) => {
         <h1>{title}</h1>
         <p>{subtitle}</p>
       </div>
-      <div>
-        <SearchBar />
-      </div>
-      <CustomizedRadios />
+      <div>{/* <SearchBar /> */}</div>
     </div>
   );
 };

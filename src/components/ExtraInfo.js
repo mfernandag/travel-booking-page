@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "@material-ui/core/Icon";
+// import Icon from "@material-ui/core/Icon";
 
 const ExtraInfo = (props) => {
   return (
@@ -7,7 +7,7 @@ const ExtraInfo = (props) => {
       {props.extraData.map((data, id) => {
         return (
           <div key={id}>
-            <Icon>{data.icon}</Icon>
+            {/* <Icon>{data.icon}</Icon> */}
             <h3>{data.title}</h3>
             <p>{data.text}</p>
           </div>
